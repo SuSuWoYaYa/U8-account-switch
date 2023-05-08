@@ -12,3 +12,4 @@ C:\Users\Administrator\Desktop\U8-account-switch\U8-account-switch\bin\Release\U
 C:\Users\Administrator\Desktop\U8-account-switch\U8-account-switch\obj\x86\Release\U8_account_switch.Form1.resources
 C:\Users\Administrator\Desktop\U8-account-switch\U8-account-switch\obj\x86\Release\U8_account_switch.Properties.Resources.resources
 C:\Users\Administrator\Desktop\U8-account-switch\U8-account-switch\obj\x86\Release\U8-account-switch.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\U8-account-switch\U8-account-switch\obj\x86\Release\U8-account-switch.csprojResolveAssemblyReference.cache

@@ -71,12 +71,36 @@ namespace U8_account_switch
                 AssemFilesDir = dirs[0];
                 //textBox1.Text = AssemFilesDir;
             }
-            else
+            else if(dirs.Length == 0)
             {
                 textBox1.Text = "获取配置目录失败";
                 MessageBox.Show("获取配置目录失败");
                 System.Environment.Exit(0);
                // Application.Exit();
+            }
+                //检测到目录下多个文件夹同名
+            else
+            {
+                foreach (string dir in dirs)
+                {
+                    AssemFilesDir = "";
+
+                    string FileLoginInfoDP = Path.Combine(dir, "ufsoftLoginInfoDP");
+                    if (File.Exists(FileLoginInfoDP))
+                    {
+                        //MessageBox.Show(dir,"获取到多个配置目录，失败");
+                        AssemFilesDir = dir;
+                        break;
+
+                    }
+                   
+                }
+
+                if (String.IsNullOrEmpty(AssemFilesDir)) 
+                {
+                    MessageBox.Show("获取到多个配置目录，失败");
+                }
+               // textBox1.Text = textBox1.Text + "\r\n" + dir;
             }
         }
 
