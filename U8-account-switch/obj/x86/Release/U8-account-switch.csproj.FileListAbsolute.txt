@@ -1,0 +1,7 @@
+c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\bin\Release\U8-account-switch.exe
+c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\bin\Release\U8-account-switch.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Release\U8_account_switch.Form1.resources
+c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Release\U8_account_switch.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Release\U8-account-switch.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Release\U8-account-switch.exe
+c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Release\U8-account-switch.pdb
