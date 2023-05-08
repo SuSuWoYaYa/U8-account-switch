@@ -103,6 +103,7 @@ namespace U8_account_switch
             if (HasFile == false)
             {
                 MessageBox.Show("获取切换文件失败");
+                System.Diagnostics.Process.Start("explorer.exe", AssemFilesDir);
                 System.Environment.Exit(0);
 
             }
@@ -119,6 +120,11 @@ namespace U8_account_switch
         {
             File.Copy(File188, FileLoginInfoDP, true);
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
     
