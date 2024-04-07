@@ -35,6 +35,7 @@ namespace U8_account_switch
           
         }
 
+        //测试按钮
         private void button3_Click(object sender, EventArgs e)
         {
             //textBox1.Text += isolatedStorageDir + " isolatedStorageDir\r\n";
@@ -65,10 +66,22 @@ namespace U8_account_switch
 
         private void getAssemFilesDir()
         {
-            string[] dirs = Directory.GetDirectories(isolatedStorageDir, "AssemFiles", SearchOption.AllDirectories);
+            //搜索获取目录
+            //string[] dirs = Directory.GetDirectories(isolatedStorageDir, "AssemFiles", SearchOption.AllDirectories);
+
+            //搜索获取文件路径
+            string[] dirs = Directory.GetFiles(isolatedStorageDir, "ufsoftLoginInfoDP", SearchOption.AllDirectories);
+
+            //foreach(string dir in dirs){
+            //    MessageBox.Show(dir);
+            //}
+            //MessageBox.Show(""+ dirs.Length);
+
             if (dirs.Length == 1)
             {
-                AssemFilesDir = dirs[0];
+                //AssemFilesDir = dirs[0];
+                AssemFilesDir = Path.GetDirectoryName(dirs[0]);
+                //MessageBox.Show("" + AssemFilesDir);
                 //textBox1.Text = AssemFilesDir;
             }
             else if(dirs.Length == 0)
@@ -146,9 +159,12 @@ namespace U8_account_switch
             Application.Exit();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+     
+        //打开文件夹
+        private void label3_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("explorer.exe", AssemFilesDir);
+      
         }
 
     
