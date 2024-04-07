@@ -107,7 +107,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "U8切换 v1.3"; 
+            this.Text = "U8切换 v1.3.1";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,3 +22,4 @@ C:\Users\Administrator\Desktop\U8-account-switch-master\U8-account-switch\obj\x8
 C:\Users\Administrator\Desktop\U8-account-switch-master\U8-account-switch\obj\x86\Release\U8_account_switch.Properties.Resources.resources
 C:\Users\Administrator\Desktop\U8-account-switch-master\U8-account-switch\obj\x86\Release\U8-account-switch.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Release\U8-account-switch.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\U8-account-switch\U8-account-switch\bin\Release\U8-account-switch.exe.config
