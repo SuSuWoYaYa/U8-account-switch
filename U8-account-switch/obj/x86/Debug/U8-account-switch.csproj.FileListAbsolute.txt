@@ -5,3 +5,5 @@ c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U
 c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\bin\Debug\U8-account-switch.pdb
 c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Debug\U8-account-switch.exe
 c:\users\administrator\documents\visual studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Debug\U8-account-switch.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\U8-account-switch\U8-account-switch\bin\Debug\U8-account-switch.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\U8-account-switch\U8-account-switch\obj\x86\Debug\U8-account-switch.csprojResolveAssemblyReference.cache

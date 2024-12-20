@@ -85,11 +85,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 85);
+            this.label3.Location = new System.Drawing.Point(113, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.Size = new System.Drawing.Size(11, 12);
             this.label3.TabIndex = 6;
-            this.label3.Text = "--------";
+            this.label3.Text = "-";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
@@ -107,7 +107,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "U8切换 v1.3.1";
+            this.Text = "U8切换 v1.4";
             this.ResumeLayout(false);
             this.PerformLayout();
 
