@@ -22,7 +22,7 @@ namespace U8_account_switch
         string File248 = "";
         string FileLoginInfoDP = "";
 
-        string U8ProcessesName = "EnterprisePortal.exe";
+        string U8ProcessesName = "EnterprisePortal";
         
 
         Boolean HasFile = true;
@@ -227,7 +227,7 @@ namespace U8_account_switch
         {
             try
             {
-                //精确进程名  用GetProcessesByName
+                //精确进程名  用GetProcessesByName 请不要加.Exe后缀名称
                 foreach (Process process in Process.GetProcessesByName(strProcessesName))
                 {
                     if (!process.CloseMainWindow())
