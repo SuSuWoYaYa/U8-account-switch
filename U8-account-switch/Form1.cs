@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using System.IO;
+using System.Diagnostics;
 
 namespace U8_account_switch
 {
@@ -18,7 +19,11 @@ namespace U8_account_switch
 
         string File186 = "";
         string File188 = "";
+        string File248 = "";
         string FileLoginInfoDP = "";
+
+        string U8ProcessesName = "EnterprisePortal.exe";
+        
 
         Boolean HasFile = true;
 
@@ -121,6 +126,7 @@ namespace U8_account_switch
 
             File186 = Path.Combine(AssemFilesDir, "186");
             File188 = Path.Combine(AssemFilesDir, "188");
+            File248 = Path.Combine(AssemFilesDir, "248");
             FileLoginInfoDP = Path.Combine(AssemFilesDir, "ufsoftLoginInfoDP");
 
             if (!File.Exists(File186))
@@ -136,6 +142,12 @@ namespace U8_account_switch
                 textBox1.Text += "获取188文件失败";
             }
 
+            if (!File.Exists(File248))
+            {
+                HasFile = false;
+                textBox1.Text += "获取248文件失败";
+            }
+
             if (HasFile == false)
             {
                 MessageBox.Show("获取切换文件失败");
@@ -147,7 +159,7 @@ namespace U8_account_switch
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            KillProc(U8ProcessesName);
             File.Copy(File186, FileLoginInfoDP, true);
             StartU8();
             Application.Exit();
@@ -155,7 +167,17 @@ namespace U8_account_switch
 
         private void button2_Click(object sender, EventArgs e)
         {
+            KillProc(U8ProcessesName);
             File.Copy(File188, FileLoginInfoDP, true);
+            StartU8();
+            Application.Exit();
+        }
+
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            KillProc(U8ProcessesName);
+            File.Copy(File248, FileLoginInfoDP, true);
             StartU8();
             Application.Exit();
         }
@@ -196,6 +218,29 @@ namespace U8_account_switch
         }
 
 
+
+        /// <summary>
+        /// 根据“精确进程名”结束进程
+        /// </summary>
+        /// <param name="strProcName">精确进程名</param>
+        public void KillProc(string strProcessesName)
+        {
+            try
+            {
+                //精确进程名  用GetProcessesByName
+                foreach (Process process in Process.GetProcessesByName(strProcessesName))
+                {
+                    if (!process.CloseMainWindow())
+                    {
+                        process.Kill();
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+        }
 
     }
 }
